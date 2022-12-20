@@ -3,11 +3,16 @@ name = "fastapi-graphql"
 version = "0.1.0"
 description = ""
 authors = ["ivansantiagojr <ivansantiago.junior@gmail.com>"]
-readme = "README.md"
-packages = [{include = "fastapi_graphql"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+gunicorn = "^20.1.0"
+dataclasses-json = "^0.5.7"
+gql = "^3.4.0"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.151.0"}
+pydantic = {extras = ["dotenv"], version = "^1.10.2"}
 
 
 [build-system]
